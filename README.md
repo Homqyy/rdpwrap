@@ -1,15 +1,17 @@
 # RDPWrap
 
-## 说明
+For Chinese, please refer to [README-zh.md](./README-zh.md).
 
-- 用途：提供Windows的远程桌面服务，主要是解决Windows家庭版本身不支持远程服务的问题
+## Overview
 
-## 使用步骤
+- Purpose: To extend Remote Desktop Services to Windows, principally aimed at circumventing limitations within the Home Edition.
 
-1. 安装：双击`install.bat`
-2. 替换补丁文件：
-    1. 在CMD终端中输入：`net stop termservice`
-    2. 替换`C:\Program Files\RDP Wrapper`文件夹中的`rdpwrap.ini`
-    3. 在CMD终端中输入：`net start termservice`
-2. 启动配置管理程序：运行`RDPConf.exe`
-3. 测试：`RDPCheck.exe`
+## Procedure
+
+1. Installation: Double-click on `install.bat`.
+2. Implement Patch File:
+    1. Enter in the CMD Terminal: `net stop termservice`.
+    2. Replace `rdpwrap.ini` in the `C:\Program Files\RDP Wrapper` directory.
+    3. Key in the CMD Terminal: `net start termservice`.
+3. Invoke the Configuration Manager: Execute `RDPConf.exe`.
+4. Verification: Utilize `RDPCheck.exe`.
